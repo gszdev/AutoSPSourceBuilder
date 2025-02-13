@@ -2702,8 +2702,18 @@
     </Product>
     <Product Name="SPSE">
         <Prerequisites>
-            <Prerequisite Name="Microsoft .NET Framework 4.8" Url="https://download.visualstudio.microsoft.com/download/pr/2d6bb6b2-226a-4baa-bdec-798822606ff1/8494001c276a4b96804cde7829c04d7f/ndp48-x86-x64-allos-enu.exe" Permalink="https://go.microsoft.com/fwlink/?linkid=2088631" />
-            <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2015-2019" Url="https://download.visualstudio.microsoft.com/download/pr/d3cbdace-2bb8-4dc5-a326-2c1c0f1ad5ae/9B9DD72C27AB1DB081DE56BB7B73BEE9A00F60D14ED8E6FDE45DAB3E619B5F04/VC_redist.x64.exe" Permalink="https://go.microsoft.com/fwlink/?LinkId=2130438" />
+            <Prerequisite Name="Microsoft .NET Framework 4.8" Url="https://download.visualstudio.microsoft.com/download/pr/2d6bb6b2-226a-4baa-bdec-798822606ff1/8494001c276a4b96804cde7829c04d7f/ndp48-x86-x64-allos-enu.exe" Permalink="https://go.microsoft.com/fwlink/?linkid=2088631" />            
+            <!--
+                Starting with SharePoint Server Subscription Edition Version 23H1 "Visual C++ Redistributable Package for Visual Studio 2015-2022" (14.32.31332.0, 14.42.34433.0 or newer ) is needed.
+                (
+                Details:
+                    14.32.31332.0: https://learn.microsoft.com/en-us/sharepoint/install/software-requirements-for-sharepoint-servers-for-sharepoint-server-subscription-edition#software-prerequisites
+                    14.42.34433.0: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
+                )
+            -->
+            <!--<Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2015-2019" Url="https://download.visualstudio.microsoft.com/download/pr/d3cbdace-2bb8-4dc5-a326-2c1c0f1ad5ae/9B9DD72C27AB1DB081DE56BB7B73BEE9A00F60D14ED8E6FDE45DAB3E619B5F04/VC_redist.x64.exe" Permalink="https://go.microsoft.com/fwlink/?LinkId=2130438" />-->
+            <!--<Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2015-2022" Url="https://download.visualstudio.microsoft.com/download/pr/e5c00d70-bdd4-4123-a4fc-32f3f7573f94/CE6593A1520591E7DEA2B93FD03116E3FC3B3821A0525322B0A430FAA6B3C0B4/VC_redist.x64.exe" Permalink="https://go.microsoft.com/fwlink/?LinkId=2224881" />-->
+            <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2015-2022" Url="https://download.visualstudio.microsoft.com/download/pr/c7dac50a-e3e8-40f6-bbb2-9cc4e3dfcabe/1821577409C35B2B9505AC833E246376CC68A8262972100444010B57226F0940/VC_redist.x64.exe" Permalink="https://aka.ms/vs/17/release/vc_redist.x64.exe" />
         </Prerequisites>
         <ServicePacks>
         </ServicePacks>
